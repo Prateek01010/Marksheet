@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .Title {
+            margin-left: 23%;
+            margin-right: 22%;
+        }
+
+        body {
+            background-color: gray;
+        }
+
+        .info {
+            margin-left: 15%;
+            margin-right: 15%;
+            border: 1px solid black;
+        }
+
+        .name {
+            margin-left: 14%;
+            margin-right: 14%;
+        }
+
+        #inst {
+            margin-left: 14%;
+            margin-right: 14%;
+        }
+
+        .marks {
+            margin-left: 15%;
+            margin-right: 15%;
+            border: 1px solid black;
+        }
+
+        .sub {
+            margin-left: 14%;
+            margin-right: 14%;
+        }
+
+        .but {
+            float: right;
+        }
+
+        body{
+            border: 2px solid darkblue;
+            border-radius: 10px;
+            margin-left: 65px;
+            margin-right: 65px;
+        }
+        table {
+            border: 2px solid black;
+            width: 21.5%;
+            height: 20%;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        th {
+            text-align: center;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: left;
+            padding: 5px;
+        }
+        .T{
+            width: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Title">
+        <h1><u>SHARDA UNIVERSITY, GREATER NOIDA, INDIA</u></h1>
+    </div>
+    <div class="info">
+        <h3><u>STUDENT INFORMATION</u></h3>
+        <form class="name">
+            <label>
+                <u> Name:</u>
+                <input type="text" name="Name" />
+            </label>
+            <form>
+                <label>
+                    <u>Father Name:</u>
+                    <input type="text" name="Name" />
+                </label>
+            </form>
+            <br>
+            <form id="inst">
+                <label>
+                    <u>Institute Name:</u>
+                    <input type="text" name="Name" />
+                </label>
+                <label>
+                    <u>Batch:</u>
+                    <input type="text" name="Name" />
+                </label>
+            </form>
+        </form>
+    </div>
+    <br>
+    <div class="marks">
+        <h3><u>SUBJECT MARKS</u></h3>
+        <form class="sub">
+            <label>
+                <u>Data Structure:</u>
+                <input type="number" name="marks" />
+                <u>Out of 100</u>
+            </label>
+            <br>
+            <label>
+                <u>Web Designing:</u>
+                <input type="number" name="marks" />
+                <u>Out of 100</u>
+            </label>
+            <br>
+            <label>
+                <u>HCI:</u>
+                <input type="number" name="marks" />
+                <u>Out of 100</u>
+            </label>
+            <br>
+            <label>
+                <u>Java Programming:</u>
+                <input type="number" name="marks" />
+                <u>Out of 100</u>
+            </label>
+        </form>
+        <button class="but">
+            Reset
+        </button>
+        <button class="but">
+            Submit
+        </button>
+    </div>
+    <br><br><br>
+    <table>
+        <tr>
+            <th colspan="2">Student Information</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td class="T"></td>
+        </tr>
+        <tr>
+            <td>Father Name</td>
+            <td class="T"></td>
+        </tr>
+        <tr>
+            <td>Institute Name</td>
+            <td class="T"></td>
+        </tr>
+        <tr>
+            <td>Batch</td>
+            <td class="T"></td>
+        </tr>
+        <tr>
+            <th colspan="2">Subject Marks</th>
+        </tr>
+        <tr>
+            <td>Data Structure</td>
+            <td class="T"></td>
+        </tr>
+        <tr>
+            <td>Web Designing</td>
+            <td class="T"></td>
+        </tr>
+        <tr>
+            <td>HCI</td>
+            <td class="T"></td>
+        </tr>
+        <tr>
+            <td>Java Programing</td>
+            <td class="T"></td>
+        </tr>
+        <tr>
+            <th colspan="2">Marks Result</th>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td class="T"></td>
+        </tr>
+        <tr>
+            <td>Percentage</td>
+            <td class="T"></td>
+        </tr>
+        <tr>
+            <td>Grade</td>
+            <td class="T"></td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
