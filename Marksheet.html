@@ -8,198 +8,187 @@
     <title>Marksheet</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .Title {
-            margin-left: 23%;
-            margin-right: 22%;
-        }
-
         body {
-            background-color: gray;
-        }
-
-        .info {
+            border-radius: 20px;
+            border-style: double;
+            border-color: blue;
+            position: absolute;
+            width: 850px;
+            height: 705px;
+            top: 15px;
+            left: 45px;
+            padding: 30px 30px 50px 30px;
+            background-color: grey;
             margin-left: 15%;
-            margin-right: 15%;
-            border: 1px solid black;
         }
 
-        .name {
-            margin-left: 14%;
-            margin-right: 14%;
+        #table1 {
+            border-collapse: collapse;
+            font-size: 18;
+            font-family: Century Gothic;
         }
 
-        #inst {
-            margin-left: 14%;
-            margin-right: 14%;
+        #table2 {
+            border-collapse: collapse;
+            font-size: 18;
+            font-family: Century Gothic;
         }
 
-        .marks {
-            margin-left: 15%;
-            margin-right: 15%;
-            border: 1px solid black;
+        .Info {
+            position: absolute;
+            left: 35px;
+            top: 380px;
+            font-size: 17;
+            font-family: Arial;
+            font-weight: bold;
+            margin-top: 35px;
+            border-collapse: collapse;
         }
 
-        .sub {
-            margin-left: 14%;
-            margin-right: 14%;
+        #Nname {
+            font-size: 15px
         }
 
         .but {
-            float: right;
-        }
-
-        body{
-            border: 2px solid darkblue;
-            border-radius: 10px;
-            margin-left: 65px;
-            margin-right: 65px;
-        }
-        table {
-            border: 2px solid black;
-            width: 21.5%;
-            height: 20%;
-            margin-left: 15%;
-            margin-right: 15%;
-        }
-
-        th {
-            text-align: center;
-        }
-
-        td {
-            border: 1px solid black;
-            text-align: left;
-            padding: 5px;
-        }
-        .T{
-            width: 40%;
+            position: absolute;
+            top: 355px;
+            left: 720px;
         }
     </style>
 </head>
 
 <body>
-    <div class="Title">
-        <h1><u>SHARDA UNIVERSITY, GREATER NOIDA, INDIA</u></h1>
-    </div>
-    <div class="info">
-        <h3><u>STUDENT INFORMATION</u></h3>
-        <form class="name">
-            <label>
-                <u> Name:</u>
-                <input type="text" name="Name" />
-            </label>
-            <form>
-                <label>
-                    <u>Father Name:</u>
-                    <input type="text" name="Name" />
-                </label>
-            </form>
-            <br>
-            <form id="inst">
-                <label>
-                    <u>Institute Name:</u>
-                    <input type="text" name="Name" />
-                </label>
-                <label>
-                    <u>Batch:</u>
-                    <input type="text" name="Name" />
-                </label>
-            </form>
-        </form>
-    </div>
-    <br>
-    <div class="marks">
-        <h3><u>SUBJECT MARKS</u></h3>
-        <form class="sub">
-            <label>
-                <u>Data Structure:</u>
-                <input type="number" name="marks" />
-                <u>Out of 100</u>
-            </label>
-            <br>
-            <label>
-                <u>Web Designing:</u>
-                <input type="number" name="marks" />
-                <u>Out of 100</u>
-            </label>
-            <br>
-            <label>
-                <u>HCI:</u>
-                <input type="number" name="marks" />
-                <u>Out of 100</u>
-            </label>
-            <br>
-            <label>
-                <u>Java Programming:</u>
-                <input type="number" name="marks" />
-                <u>Out of 100</u>
-            </label>
-        </form>
-        <button class="but">
-            Reset
-        </button>
-        <button class="but">
-            Submit
-        </button>
-    </div>
-    <br><br><br>
-    <table>
-        <tr>
-            <th colspan="2">Student Information</th>
-        </tr>
-        <tr>
-            <td>Name</td>
-            <td class="T"></td>
-        </tr>
-        <tr>
-            <td>Father Name</td>
-            <td class="T"></td>
-        </tr>
-        <tr>
-            <td>Institute Name</td>
-            <td class="T"></td>
-        </tr>
-        <tr>
-            <td>Batch</td>
-            <td class="T"></td>
-        </tr>
-        <tr>
-            <th colspan="2">Subject Marks</th>
-        </tr>
-        <tr>
-            <td>Data Structure</td>
-            <td class="T"></td>
-        </tr>
-        <tr>
-            <td>Web Designing</td>
-            <td class="T"></td>
-        </tr>
-        <tr>
-            <td>HCI</td>
-            <td class="T"></td>
-        </tr>
-        <tr>
-            <td>Java Programing</td>
-            <td class="T"></td>
-        </tr>
-        <tr>
-            <th colspan="2">Marks Result</th>
-        </tr>
-        <tr>
-            <td>Total</td>
-            <td class="T"></td>
-        </tr>
-        <tr>
-            <td>Percentage</td>
-            <td class="T"></td>
-        </tr>
-        <tr>
-            <td>Grade</td>
-            <td class="T"></td>
-        </tr>
-    </table>
+    <DIV class="color">
+        <H1 align="center" style="font-family:cambria;font-size:40" ;><U>SHARDA UNIVERSITY, GREATER NOIDA, INDIA</H1>
+        <FIELDSET>
+            <LEGEND> STUDENT INFORMATION </LEGEND>
+            <TABLE align="center" id="table1">
+                <FORM name="form1">
+                    </TR>
+                    <TD width="140">Name:</TD>
+                    <TD><INPUT type="text" name="txtname" /></TD>
+                    <TD> &nbsp; &nbsp;Father Name:</TD>
+                    <TD> <INPUT type="text" name="txtfname" /></TD>
+                    </TR>
 
+                    <TR>
+                        <TD width="140"> Institute Name:</TD>
+                        <TD> <INPUT type="text" name="txtins" /></TD>
+                        <TD style="text-indent:16px">Batch:</TD>
+                        <TD> <INPUT type="text" name="txtbatch" /></TD>
+                    </TR>
+            </TABLE>
+        </FIELDSET></BR>
+        <FIELDSET>
+            <LEGEND> SUBJECTS MARKS </LEGEND>
+            <TABLE id="table2">
+                <TR>
+                    <TD>Data Structure:</TD>
+                    <TD> <INPUT type="text" name="txtoffice" maxlength="2" size="10" /> Out of 100 </TD>
 
+                </TR>
+                <TR>
+                    <TD> Web Designing:</TD>
+                    <TD> <INPUT type="text" name="txtweb" maxlength="2" size="10" /> Out of 100</TD>
+                </TR>
+                <TR>
+                    <TD> HCI:</TD>
+                    <TD> <INPUT type="text" name="txtit" maxlength="2" size="10" /> Out of 100</TD>
+                </TR>
+                <TR>
+                    <TD> Java Programing:</TD>
+                    <TD> <INPUT type="text" name="txtc" maxlength="2" size="10" /> Out of 100</TD>
+                </TR>
+                <TR>
+                    <TD>&nbsp;</TD>
+                </TR>
+            </TABLE>
+        </FIELDSET>
+        <DIV class="but">
+            <button style="font-size:17" type="button" onclick='myFun()'>Submit</button>
+            <button style="font-size:17" type="Reset">Reset</button>
+        </DIV>
+        <DIV class="Info">
+            <TABLE border="1">
+                <TR>
+                    <TH colspan="8" width="240"> Student Information </TH>
+                </TR>
+                <TR>
+                    <TD width="135">Name:</TD>
+                    <TD>
+                        <FONT face="arial" id="Nname"></FONT>
+                    </TD>
+                </TR>
+                <TR>
+                    <TD width="135">Father Name:</TD>
+                    <TD>
+                        <FONT face="arial" id="Fname"></FONT>
+                    </TD>
+                </TR>
+                <TR>
+                    <TD width="135">Institute Name:</TD>
+                    <TD>
+                        <FONT face="arial" id="Iins"></FONT>
+                    </TD>
+                </TR>
+                <TD width="135">Batch:</TD>
+                <TD>
+                    <FONT face="arial" id="Bbatch"></FONT>
+                </TD>
+                </TR>
+                <TR>
+                    <TH colspan="8" width="240"> Subjects Marks </TH>
+                </TR>
+                <TR>
+                    <TD width="135">Data Structure:</TD>
+                    <TD>
+                        <FONT face="arial" id="Ooffice"></FONT>
+                    </TD>
+                </TR>
+                <TR>
+                    <TD width="135">Web Designing:</TD>
+                    <TD>
+                        <FONT face="arial" id="Wweb"></FONT>
+                    </TD>
+                </TR>
+                <TD width="135">HCI:</TD>
+                <TD>
+                    <FONT face="arial" id="Iit"></FONT>
+                </TD>
+                </TR>
+                <TR>
+                    <TD width="135">Java Programing:</TD>
+                    <TD>
+                        <FONT face="arial" id="Cc"></FONT>
+                    </TD>
+                </TR>
+                <TR>
+                    <TH colspan="8" width="240"> Marks Result </TH>
+                </TR>
+                <TR>
+                    <TD width="135">TOTAL:</TD>
+                    <TD>
+                        <FONT face="arial" id="Ttotal"></FONT></TT>
+                    </TD>
+                </TR>
+                <TR>
+                    <TD width="135">Percentage:</TD>
+                    <TD>
+                        <FONT face="arial" id="Pper"></FONT>
+                    </TD>
+                </TR>
+                <TR>
+                    <TD width="135">Grade:</TD>
+                    <TD>
+                        <FONT face="arial" id="Ggrade"></FONT>
+                    </TD>
+                </TR>
+            </TABLE>
+        </DIV>
+    </DIV>
+    <script src="index2.js">
+        
+    </script>
 </body>
 
 </html>
